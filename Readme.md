@@ -77,6 +77,7 @@ frontend
 ## ⚙️ Instalação
 Instalar todas as dependências:
 ```bash
+yarn install
 yarn dev:install
 ```
 Gerar o cliente Prisma e rodar as migrações:
@@ -84,6 +85,7 @@ Gerar o cliente Prisma e rodar as migrações:
 cd backend/
 yarn prisma generate
 yarn prisma migrate dev
+cd ..
 ```
 ---
 
