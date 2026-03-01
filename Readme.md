@@ -81,7 +81,9 @@ yarn dev:install
 ```
 Gerar o cliente Prisma e rodar as migrações:
 ```bash
-yarn migrate:backend
+cd backend/
+yarn prisma generate
+yarn prisma migrate dev
 ```
 ---
 
