@@ -94,7 +94,7 @@ yarn dev
 ---
 
 ## 🌐 Endpoints da API
-
+```bash
 Criar Produto  
 POST /products
 
@@ -110,9 +110,9 @@ Listar Produtos
 GET /products
 
 ---
-
+````
 ## 🧪 Tecnologias
-
+```bash
 Backend
 - Node.js
 - TypeScript
@@ -124,7 +124,7 @@ Frontend
 - Vue 3
 - Vue Router
 - TailwindCSS
-
+````
 ---
 
 ## 👨‍💻 Autor
