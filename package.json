@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev:frontend":"npm run dev --prefix frontend",
+    "migrate:backend":"yarn prisma generate --prefix backend && yarn prisma migrate dev --prefix backend",
+    "dev:backend":"npm run dev --prefix backend",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "build:frontend":"npm run build --prefix frontend",
+    "build:backend":"npm run build --prefix backend",
+    "build": "npm run build:frontend && npm run build:backend",
+    "dev:install:frontend":"npm install --prefix frontend",
+    "dev:install:backend":"npm install --prefix backend",
+    "dev:install": "npm run dev:install:frontend && npm run dev:install:backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

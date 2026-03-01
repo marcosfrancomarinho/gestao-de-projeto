@@ -1,0 +1,12 @@
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name":"computador",
+    "price":123.88
+}
+
+
+###
+GET http://localhost:3000/products
